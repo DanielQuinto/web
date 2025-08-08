@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tienda de Tenis</title>
+  <style>
+    body{font-family:sans-serif;background:#f7f7f7;margin:0}
+    header,footer{padding:16px;background:#fff;text-align:center}
+    nav a{margin:0 8px;color:#333;text-decoration:none}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;padding:16px}
+    .card{background:#fff;padding:12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+    .card img{width:100%;border-radius:6px}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Tienda de Tenis</h1>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#coleccion">Colección</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+<main>
+  <section id="coleccion" class="grid">
+    <div class="card">
+      <img src="c:\Users\Cacon9\OneDrive - Iglesia Episcopal Hondureña\Escritorio\nuevo 1\img\cat-3.jpg" alt="Tenis modelo A">
+      <h3>Tenis Modelo A</h3>
+      <p>L. 1,899</p>
+    </div>
+    <div class="card">
+      <img src="c:\Users\Cacon9\OneDrive - Iglesia Episcopal Hondureña\Escritorio\nuevo 1\img\product-4.jpg" alt="Tenis modelo B">
+      <h3>Tenis Modelo B</h3>
+      <p>L. 2,250</p>
+    </div>
+  </section>
+  <section id="contacto" style="padding:16px">
+    <h2>Contacto</h2>
+    <p>WhatsApp: <strong>+504 0000-0000</strong></p>
+  </section>
+</main>
+<footer>
+  © <span id="year"></span> Tienda de Tenis
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
